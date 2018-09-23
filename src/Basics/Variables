@@ -1,0 +1,66 @@
+Variables and Fields
+Variable - Anything in general
+Field - Instance variable (non-static) or Class Variable (static)
+Instance Variable, Class Variable, Local variable (local to a black of code or method) and Parameters (args passed to a method or constructor)
+
+Naming
+Variable begins with letter, $ or _ ($ and _ are discouraged)
+Can contain letters, character, $ and _
+Reserved words (eg. int, float) and keywords not allowed to use
+
+Java: Statically typed - Variables needs to be defined first before using them
+
+8 primitive types
+byte (0): 8 bit 2's complement integer (-128 to 127)
+short (0): 16 bit 2's complementary integer (-32768 to 32767)
+int (0): 32 bit 2's complementary integer (-2^31 to 2^31-1), from Java 8 int can be 32 bin unsigned integer (Integer class supports static methods for unsigned operations)
+long (0L): 64 bit 2's complementart integer, from java 8 long can be unsigned
+float (0.0f): single-precision 32 bit IEEE 754 floating point, should not be used for precise values
+double (0.0d): double-precision 64 bit IEEE 754 floating point, should not be used for precise values
+boolean (false): true/false, size not precisely defined
+char ('\u0000'): 16-bit Unicode character (\u0000 to \uFFFF)
+
+Relying on such default values, however, is generally considered bad programming style.
+Compiler never assigns a default value to an uninitialized local variable.
+Accessing an uninitialized local variable will result in a compile-time error.
+
+Literals
+Literal is the source code representation of a fixed value ('C', 100L, 1.234)
+Integer Literal: Integer literal is of type long if it end with L, else of type int. Can be expressed in decimal (10), hexadecimal (0x1F), binary (0b0010)
+Floating point literal: Float of ends with F or f (123.4f), else double. Can also be expressed using E or e (1.234e2) (scientific notation)
+Character and String Literals: May contain unicode characters (if IDE don't allow then use unicode escape, eg '\u0108')
+Character literal in single quotes, String literals in double quotes
+Special escape sequences for char and String literals: \b (backspace), \t (tab), \n (line feed), \f (form feed), \r (carriage return), \" (double quote), \' (single quote), and \\ (backslash)
+
+Other literals: null, Type eg. String.class
+
+Any number of underscore characters (_) can appear anywhere between digits in a numerical literal (eg 1234_5678_9012_3456L, 3.14_15F)
+
+You can place underscores only between digits; you cannot place underscores in the following places:
+    -At the beginning or end of a number (52_)
+    -Adjacent to a decimal point in a floating point literal (52._12)
+    -Prior to an F or L suffix (21.5_F)
+    -In positions where a string of digits is expected
+
+Arrays
+int[] anArray = {
+    100, 200, 300,
+    400, 500, 600,
+    700, 800, 900, 1000
+};
+
+The System class has an arraycopy method that you can use to efficiently copy data from one array into another:
+public static void arraycopy(Object src, int srcPos,
+                             Object dest, int destPos, int length)
+
+Explore java.util.Arrays class
+Some other useful operations provided by methods in the java.util.Arrays class, are:
+-Searching an array for a specific value to get the index at which it is placed (the binarySearch method).
+-Comparing two arrays to determine if they are equal or not (the equals method).
+-Filling an array to place a specific value at each index (the fill method).
+-Sorting an array into ascending order. This can be done either sequentially, using the sort method, or concurrently, using the parallelSort method introduced in Java SE 8. Parallel sorting of large arrays on multiprocessor systems is faster than sequential array sorting.
+
+
+
+
+
