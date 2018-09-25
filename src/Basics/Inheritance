@@ -1,0 +1,12 @@
+A subclass inherits all the public and protected members (fields, methods, and nested classes) from its superclass.
+Constructors are not members, so they are not inherited by subclasses, but the constructor of the superclass can be invoked from the subclass.
+
+Subclass object can be used in place of superclass references
+
+Multiple Inheritance of State: Sub class inheriting multiple classes, if multiple methods will try to modify a filed with same name in multiple parent classes, which method should take precedence
+Multiple Inheritance of implementation: Same name method from multiple super classes, in such cases compiler is not able to figure out which method to call
+Java provide rule to do away with this problem with default methods
+
+Multiple inheritance of type: Implement multiple Interfaces
+
+

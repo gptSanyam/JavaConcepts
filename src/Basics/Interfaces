@@ -1,0 +1,26 @@
+Interfaces are contracts (operations that can be performed on an object).
+
+Contains: constants, method signatures (abstract methods), default methods, static methods, and nested types
+
+Method bodies exist only for default methods and static methods.
+Interfaces cannot be instantiated—they can only be implemented by classes or extended by other interfaces.
+
+Can we declare variables in interfaces? Will declared variables be visible in class which implements an interface? Variables declared in an interface are final by default and they cannot be modified in the implementing class, variables can be read though
+
+An interface can extend any number of interfaces, as opposed to a class extending only one class.
+Example: public interface GroupedInterface extends Interface1, Interface2, Interface3
+
+Methods are implicitly public and constants are implicitly public, static and final.
+
+Interface name is a reference type, can be used instead of class name.
+InterfaceName obj = Any instance of class that implements the interface
+
+Extending an interface
+Add a method: But this will break the contract and all the clients will need to change their implementations
+Extend Interface and add new method in the new Interface
+Add a default method to the original interface: Implementation is must for this
+Add a static method in the original interface
+
+While extending an interface with default method if you redeclare the method, it will become abstract
+
+Empty interfaces can be used as types and to mark classes without requiring any particular method implementations.
