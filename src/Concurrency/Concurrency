@@ -1,0 +1,13 @@
+Race Condition
+Deadlock
+wait, notify
+synchronization --> method, block
+volatile
+Reentrant locks
+
+Lock objects
+Executor, ExecutorService, ScheduledExecutorService
+ThreadPools
+Fork/Join pool
+Concurrent Collections --> BlockingQueue, ConcurrentMap, ConcurrentNavigableMap
+Atomic variables
